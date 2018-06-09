@@ -8,12 +8,15 @@
      return n.toString();
  }
 
-
 /**
  * Adds one to a given number.
  * @param {number} n
  * @return {number}
  */
+
+ function increase (n) {
+     return  n+=1;
+ }
 
 
 /**
@@ -22,7 +25,9 @@
  * @return {number}
  */
 
-
+function decrease (n) {
+    return n-=1;
+}
 /**
  * Adds two numbers.
  * @param {number} x
