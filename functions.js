@@ -73,6 +73,11 @@ function decrease (n) {
  * @return {number} the quotient
  */
 
+ function divide (x, y) {
+     var quotient = x / y;
+     return quotient;
+ }
+
 
 /**
  * Multiplies a number by itself.
@@ -80,6 +85,10 @@ function decrease (n) {
  * @return {number} squared
  */
 
+ function square (x) {
+     var squared = Math.pow(x,2);
+     return squared;
+ }
 
 /**
  * Performs a mathematical operation on two numbers.
@@ -89,7 +98,26 @@ function decrease (n) {
  * @param {number} y
  * @return {number} the result
  */
-
+function calculate (operation, x, y) {
+    var result = null;
+    if (operation === "add") {
+        var result = x + y;
+        console.log(x + " + " + y + " = " + result);
+        return result;
+    } else if (operation === "subtract") {
+        var result = x - y; 
+        console.log(x + " - " + y + " = " + result);
+        return result;
+    } else if (operation === "multiply") {
+        var result = x * y;
+        console.log(x + " * " + y + " = " + result);
+        return result;
+    } else {
+        var result = x / y;
+        console.log(x + " / " + y + " = " + result);
+        return result;
+    };
+}
 
 /**
  * Returns true if `a` is greater than `b`.
@@ -98,6 +126,13 @@ function decrease (n) {
  * @return {boolean} `a` is larger than `b`
  */
 
+function isGreaterThan (a, b) {
+    if (a > b) { 
+        return true;
+    } else {
+        return false;
+    }
+}
 
 /**
  * Returns true if `a` is less than `b`.
@@ -106,6 +141,14 @@ function decrease (n) {
  * @return {boolean} `a` is smaller than `b`
  */
 
+ function isLessThan (a, b) {
+     if (a < b) {
+         return true; 
+     } else {
+         return false;
+     }
+ }
+
 
 /**
  * Returns true if `a` and `b` are equal.
@@ -113,7 +156,14 @@ function decrease (n) {
  * @param {number} b
  * @return {boolean} the numbers are equal
  */
-
+ 
+function areEqual (a, b) {
+    if (a === b) {
+        return true; 
+    } else {
+        return false;
+    }
+}
 
 /**
  * Returns the smallest value of two numbers.
