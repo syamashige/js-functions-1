@@ -48,6 +48,11 @@ function decrease (n) {
  * @return {number} the difference
  */
 
+ function subtract (x,y) {
+     var difference = x - y;
+     return difference;
+ }
+
 
 /**
  * Multiplies two numbers.
@@ -56,6 +61,10 @@ function decrease (n) {
  * @return {number} the product
  */
 
+ function multiply (x,y) {
+     var product = x * y;
+     return product;
+ }
 
 /**
  * Divides the first number by the second.
