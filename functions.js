@@ -227,6 +227,23 @@ function isEven (n) {
  * @return {string} the score represented as a letter grade
  */
 
+ function letterGrade (score, total) {
+     if (score/total >= .90) {
+         return "A";
+     } 
+     else if (score/total >= .80 && score/total < .90) {
+         return "B";
+     }
+     else if (score/total >= .70 && score/total < .80) {
+         return "C";
+     }
+     else if (score/total >= .60 && score/total < .70) {
+         return "D";
+     }
+     else {
+         return "F";     
+        }
+ }
 
 /**
  * Checks if a `restaurant` object has a `reviews` property.
