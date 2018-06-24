@@ -172,6 +172,9 @@ function areEqual (a, b) {
  * @return {number} the smallest number
  */
 
+ function minimum (x, y) {
+     return Math.min(x, y);
+ }
 
 /**
  * Returns the largest value of two numbers.
@@ -180,6 +183,9 @@ function areEqual (a, b) {
  * @return {number} the largest number
  */
 
+ function maximum (x, y) {
+     return Math.max(x, y);
+ }
 
 /**
  * Returns true if `n` is even.
@@ -187,12 +193,26 @@ function areEqual (a, b) {
  * @return {boolean} the number is even
  */
 
-
+function isEven (n) {
+    if (n%2 === 0) {
+        return true;
+    } else {
+        return false;
+    }
+}
 /**
  * Returns true if `n` is odd.
  * @param {number} n
  * @return {boolean} the number is odd
  */
+
+ function isOdd (n) {
+     if (n%2 !== 0) {
+         return true;
+     } else {
+         return false;
+     }
+ }
 
 
 /**
